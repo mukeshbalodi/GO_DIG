@@ -64,30 +64,30 @@ public class Barmer {
         // Create a new WiniumDriver instance
         System.out.println("Launching Application");
         driver = new WiniumDriver(new URL("http://localhost:9999"), option);
-      //  WebDriverWait wait = new WebDriverWait(driver, 40); 
-      //  WebElement userIdField = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("enterUserID")));
-      //  System.out.println("UserID field found");
-      //  userIdField.sendKeys("operator@cairn.co.in");
-     //   System.out.println("UserID entered");
+      /*  WebDriverWait wait = new WebDriverWait(driver, 40); 
+        WebElement userIdField = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("enterUserID")));
+        System.out.println("UserID field found");
+        userIdField.sendKeys("operator@cairn.co.in");
+        System.out.println("UserID entered");
    
 
-   // Thread.sleep(2000); 
+    Thread.sleep(2000); 
 
    
-    //    WebElement passwordField = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("enterPassword")));
-      //  System.out.println("Password field found");
-    //    passwordField.sendKeys("1234");
-     //   System.out.println("Password entered");
+        WebElement passwordField = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("enterPassword")));
+        System.out.println("Password field found");
+        passwordField.sendKeys("1234");
+        System.out.println("Password entered");
 
    
 
-  //  Thread.sleep(2000);
+    Thread.sleep(2000);
 
    
-   //     WebElement loginButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("loginButton")));
-    //    System.out.println("Login button found");
-   //     loginButton.click();
-    //    System.out.println("Clicked on Login Button");
+        WebElement loginButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("loginButton")));
+        System.out.println("Login button found");
+       loginButton.click();
+    */    System.out.println("Clicked on Login Button");
         
         System.out.println("Loading window running ");
         
