@@ -1,5 +1,6 @@
 package Report_View;
 
+import java.awt.Robot;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -81,7 +82,7 @@ private static void interactWithApplication() {
 		 ele1.click();
 		 Thread.sleep(3000);
 		 
-		WebElement ele2 = driver.findElement(By.name("Daily Production Report"));
+		WebElement ele2 = driver.findElement(By.name("Production Report"));
 		ele2.click();
 		Thread.sleep(5000);
 		
@@ -95,13 +96,25 @@ private static void interactWithApplication() {
 		WebElement ele5 = driver.findElement(By.name("May"));
 		ele5.click();
 		
-		WebElement ele16 = driver.findElement(By.name("7"));
-		ele16.click();
+		driver.findElement(By.name("2024")).click();
 		
-	//	WebElement ele6 = driver.findElement(By.name("2024"));
-		//ele6.click();
-	//	Thread.sleep(2000);
-	//	ele6.sendKeys(Keys.ARROW_DOWN);
+		Robot robot = new Robot();
+		robot.keyPress(50); robot.keyRelease(50);
+		robot.keyPress(48);robot.keyRelease(48);
+		robot.keyPress(50);robot.keyRelease(50);
+		robot.keyPress(51);robot.keyRelease(51);
+		
+		Thread.sleep(2000);
+		
+		WebElement ele16 = driver.findElement(By.name("7"));// doing this twice because first click outside then on element 7
+		ele16.click();
+		WebElement ele1711 = driver.findElement(By.name("7"));
+		ele1711.click();
+		
+		Thread.sleep(2000);
+		
+		
+	
 		
 		WebElement ele7 = driver.findElement(By.name("OK"));
 		ele7.click();
@@ -117,14 +130,22 @@ private static void interactWithApplication() {
 		WebElement ele10 = driver.findElement(By.name("May"));
 		ele10.click();
 		
-		//WebElement ele11 = driver.findElement(By.name("2024"));
-		//ele11.click();
-		//Thread.sleep(2000);
-		//ele6.sendKeys("2023");
 		
-		WebElement ele17 = driver.findElement(By.name("7"));
+		driver.findElement(By.name("2024")).click();
+		
+		Robot robot1 = new Robot();
+		robot1.keyPress(50); robot1.keyRelease(50);
+		robot1.keyPress(48);robot1.keyRelease(48);
+		robot1.keyPress(50);robot1.keyRelease(50);
+		robot1.keyPress(51);robot1.keyRelease(51);
+		
+		Thread.sleep(2000);
+		
+		WebElement ele17 = driver.findElement(By.name("7"));// doing this twice because first click outside then on element 7
 		ele17.click();
-		
+		WebElement ele171 = driver.findElement(By.name("7"));
+		ele171.click();
+		Thread.sleep(2000);
 		WebElement ele12 = driver.findElement(By.name("OK"));
 		ele12.click();
 		Thread.sleep(2000);
@@ -139,29 +160,10 @@ private static void interactWithApplication() {
 		WebElement ele15 = driver.findElement(By.name("getReportButton"));
 		ele15.click();
 		
-		Thread.sleep(2000);
+		driver.findElement(By.name("Maximize")).click();
+		Thread.sleep(10000);
 		
 
-		 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     } catch (org.openqa.selenium.NoSuchElementException e) {
